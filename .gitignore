@@ -1,0 +1,19 @@
+**/.ipynb_checkpoints/**
+**/__pycache__/**
+**/.DS_Store/**
+
+chainer-pix2pix/generate_tmp/**
+
+# images
+images/canny/**
+images/generate/**
+images/original/**
+images/resized/**
+images/test/**
+images/train/**
+
+# results
+results/generate/**
+results/images/**
+results/npz/**
+results/preview/**
