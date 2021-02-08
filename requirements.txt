@@ -1,0 +1,6 @@
+chainer==7.7.0
+matplotlib
+numpy
+Pillow
+scikit-image==0.18.1
+scipy==1.6.0
