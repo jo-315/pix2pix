@@ -12,8 +12,10 @@ mkdir -p ./images/canny
 mkdir -p ./images/generate
 mkdir -p ./images/original
 mkdir -p ./images/resized
-mkdir -p ./images/test
-mkdir -p ./images/train
+mkdir -p ./images/test/base
+mkdir -p ./images/test/label
+mkdir -p ./images/train/base
+mkdir -p ./images/train/label
 
 echo "create ./results folder"
 mkdir -p ./results

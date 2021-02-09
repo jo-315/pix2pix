@@ -1,6 +1,8 @@
 chainer==7.7.0
-matplotlib
-numpy
-Pillow
+matplotlib==3.3.4
+numpy==1.20.1
+Pillow==8.1.0
 scikit-image==0.18.1
 scipy==1.6.0
+opencv-python==4.5.1.48
+opencv-contrib-python==4.5.1.48
