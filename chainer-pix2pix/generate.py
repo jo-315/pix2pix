@@ -80,7 +80,7 @@ def main():
 
     out_image(
         updater, enc, dec,
-        1, 1, args.seed, '../results/generate/images/', True, test_iter)(trainer)
+        1, 1, args.seed, '../results/generate/', True, test_iter)(trainer)
 
 
 if __name__ == '__main__':
