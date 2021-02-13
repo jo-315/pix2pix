@@ -62,7 +62,7 @@ def main():
     enc = Encoder(in_ch=3)
     dec = Decoder(out_ch=3)
     dis = Discriminator(in_ch=3, out_ch=3)
-    
+
     if args.gpu >= 0:
         chainer.cuda.get_device(args.gpu).use()  # Make a specified GPU current
         enc.to_gpu()  # Copy the model to the GPU
@@ -80,8 +80,8 @@ def main():
     opt_dec = make_optimizer(dec)
     opt_dis = make_optimizer(dis)
 
-    train_d = FacadeDataset(args.traindataset, data_range=(1,369))
-    test_d = FacadeDataset(args.testdataset, data_range=(369,400))
+    train_d = FacadeDataset(args.traindataset, data_range=(1,91))
+    test_d = FacadeDataset(args.testdataset, data_range=(92,103))
     #train_iter = chainer.iterators.MultiprocessIterator(train_d, args.batchsize, n_processes=4)
     #test_iter = chainer.iterators.MultiprocessIterator(test_d, args.batchsize, n_processes=4)
     train_iter = chainer.iterators.SerialIterator(train_d, args.batchsize)
@@ -94,7 +94,7 @@ def main():
             'main': train_iter,
             'test': test_iter},
         optimizer={
-            'enc': opt_enc, 'dec': opt_dec, 
+            'enc': opt_enc, 'dec': opt_dec,
             'dis': opt_dis},
         device=args.gpu)
     output_path = args.out+'npz/'
