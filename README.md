@@ -1,7 +1,9 @@
 # generate building images
 手書きデータから写真のような建物の画像を出力する
 
-reference: https://spjai.com/pix2pix-image-generation/
+reference:  
+https://spjai.com/pix2pix-image-generation/  
+https://vigne-cla.com/4-7/
 
 ## setup enviroment
 1. dockerをビルドする  
